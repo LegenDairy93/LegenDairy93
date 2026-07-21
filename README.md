@@ -1,64 +1,65 @@
-# Devaanga Prakash Oza
+# Devaanga Prakash
 
 ### Applied AI Builder
 
-I build AI systems that people can inspect, test, and trust.
+I build AI products people can inspect, test, and trust.
 
-My work sits between product thinking and implementation: offline inference, evidence grounding, schema validation, agent traces, behavioral evaluation, and the interfaces that make those systems understandable.
+My current focus is **behavioral version control for AI agents**: making changes in outputs, tools, traces, and release behavior understandable before they reach production.
 
 [Portfolio](https://legendairy93.github.io) · [LinkedIn](https://www.linkedin.com/in/devaanga-prakash-0a8482196) · [Email](mailto:devaanga1234@gmail.com)
 
 ---
 
-## Selected work
-
-### [Discharge Navigator](https://github.com/LegenDairy93/discharge-navigator)
-
-An offline, CPU-only system that turns unstructured clinical notes into evidence-grounded discharge packets using MedGemma 4B.
-
-- Runs on a consumer laptop with no internet after model download
-- Grounds every extracted claim to an exact span in the source note
-- Evaluated on 50 clinical notes: **92% parse rate** and **87.5% overall grounding**
-- Catches invalid output at the schema gate and keeps a clinician in control
-
-[Try the demo](https://huggingface.co/spaces/haguman/discharge-navigator-demo) · [View the model card](https://huggingface.co/haguman/discharge-navigator-medgemma) · [Watch the walkthrough](https://youtu.be/GjRunxRwvak)
-
-`Python` `MedGemma` `Ollama` `Pydantic` `Gradio` `edge AI` `evaluation`
+## Building now
 
 ### [PromptDiff](https://github.com/LegenDairy93/promptdiff)
 
-A local-first TypeScript CLI for reviewing how prompts and agents change—not just whether their final text changed.
+**Behavioral version control and release governance for prompts and agents.**
 
-- Treats a prompt and an agent as different system types
-- Captures ordered model, tool, and final-output traces
-- Validates declared tools and tool arguments as contracts
-- Produces small JSON artifacts and a self-contained HTML review report
-- Keeps tool drift informational by default; explicit policies decide what blocks CI
+PromptDiff is a local-first TypeScript CLI that captures how an AI system behaved, compares it with an approved baseline, and gives teams a reviewable artifact for deciding what ships.
 
-Promptfoo is a broad evaluation and red-teaming platform. PromptDiff has a narrower job: make one before/after behavioral change easy to review in a pull request.
+- Treats prompts and agents as different system types
+- Captures outputs, ordered traces, tool calls, argument contracts, and violations
+- Promotes accepted runs into named, integrity-checked behavioral baselines
+- Records promotion history, reviewer intent, Git state, and CI provenance
+- Produces self-contained HTML reports and configurable regression gates
+- Keeps tool drift informational by default; explicit policy decides what blocks CI
+- Protected by **72 tests** in the current v0.3 release
+
+[Read the repository](https://github.com/LegenDairy93/promptdiff) · [See v0.3](https://github.com/LegenDairy93/promptdiff/blob/main/docs/release-0.3.0.md) · [Open an issue](https://github.com/LegenDairy93/promptdiff/issues)
 
 `TypeScript` `Node.js` `JSON Schema` `Vitest` `GitHub Actions` `agent evaluation`
 
+### Why it exists
+
+Evaluation platforms answer questions such as “which prompt or model scores better?” PromptDiff owns the change-control loop around a release:
+
+```text
+capture behavior → compare candidate → review the path → approve a baseline → gate what ships next
+```
+
+The final answer is only one part of agent behavior. If two runs return identical text but use different tools, data, or execution paths, that difference should be visible—even when policy chooses not to block it.
+
 ---
 
-## How I build
+## What I am building toward
 
-- **Ground first:** outputs should point back to evidence, inputs, and execution history.
-- **Validate boundaries:** schemas and explicit contracts catch failures before downstream use.
-- **Show the path:** for agents, the tool calls and intermediate steps matter as much as the answer.
-- **Design for constraints:** offline, CPU-only, local-first, and human-reviewable are product choices.
-- **Measure honestly:** publish evaluation results and failure cases, not just the best demo.
+- Policy-as-code for behavioral release decisions
+- Deterministic replay and incident-to-regression workflows
+- GitHub pull-request annotations and approval checks
+- Adapters for common agent runtimes and OpenTelemetry traces
+- A collaboration layer without sacrificing portable, local-first artifacts
 
 ## Background
 
-I studied Business Administration and learned software by building products. That combination shapes how I work: start with the user and the operating constraint, then build the smallest system that can prove its value.
+I studied Business Administration and learned software by building products. That combination shapes how I work: start with the user and operating constraint, then build the smallest system that proves its value.
 
-I am based in India and open to applied AI, AI product, developer tooling, and automation opportunities—including remote collaborations.
+I am based in India and open to applied AI, AI product, developer tooling, agent infrastructure, and automation opportunities—including remote collaborations.
 
 ## Build with me
 
-- Try a project and open an issue with a reproducible failure case.
-- Contribute an adapter, assertion, example, or documentation improvement to PromptDiff.
-- Reach out if you are building AI systems where reliability, privacy, or auditability matters.
+- Try PromptDiff and open an issue with a reproducible failure case.
+- Contribute an adapter, assertion, example, policy, or documentation improvement.
+- Reach out if you are building AI systems where reliability and auditability matter.
 
 **Contact:** [devaanga1234@gmail.com](mailto:devaanga1234@gmail.com)
