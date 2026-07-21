@@ -1,10 +1,10 @@
 # Devaanga Prakash
 
-### Applied AI Builder
+### PRODUCT × SOFTWARE × AI
 
-I build AI products people can inspect, test, and trust.
+I turn promising ideas into working products.
 
-My current focus is **behavioral version control for AI agents**: making changes in outputs, tools, traces, and release behavior understandable before they reach production.
+I combine product thinking with hands-on software building—from finding the real problem to designing, shipping, and improving the solution.
 
 [Portfolio](https://legendairy93.github.io) · [LinkedIn](https://www.linkedin.com/in/devaanga-prakash-0a8482196) · [Email](mailto:devaanga1234@gmail.com)
 
@@ -15,6 +15,8 @@ My current focus is **behavioral version control for AI agents**: making changes
 ### [PromptDiff](https://github.com/LegenDairy93/promptdiff)
 
 **Behavioral version control and release governance for prompts and agents.**
+
+Compare outputs, tool calls, and execution traces. Approve behavioral baselines and enforce release policy.
 
 PromptDiff is a local-first TypeScript CLI that captures how an AI system behaved, compares it with an approved baseline, and gives teams a reviewable artifact for deciding what ships.
 
@@ -52,14 +54,14 @@ The final answer is only one part of agent behavior. If two runs return identica
 
 ## Background
 
-I studied Business Administration and learned software by building products. That combination shapes how I work: start with the user and operating constraint, then build the smallest system that proves its value.
+I studied Business Administration and learned software by building products. That path taught me to move between user problems, product decisions, and implementation—and to stay with an idea until it becomes a complete, usable product.
 
-I am based in India and open to applied AI, AI product, developer tooling, agent infrastructure, and automation opportunities—including remote collaborations.
+I am based in India and open to product, software, AI, developer tooling, and automation opportunities—including remote collaborations.
 
 ## Build with me
 
 - Try PromptDiff and open an issue with a reproducible failure case.
 - Contribute an adapter, assertion, example, policy, or documentation improvement.
-- Reach out if you are building AI systems where reliability and auditability matter.
+- Reach out if you are building ambitious products or AI systems where reliability and auditability matter.
 
 **Contact:** [devaanga1234@gmail.com](mailto:devaanga1234@gmail.com)
