@@ -10,11 +10,6 @@ I build software, explore AI systems, and work with data.
 
 Most of my projects begin with a question.
 
-### What changed?
-
-[**PromptDiff**](https://github.com/LegenDairy93/promptdiff) compares two versions of a prompt or agent. It looks at the answer, tool calls, arguments, and the path taken through a run.
-
-`TypeScript` | `CLI` | `HTML reports`
 
 ### Where might an open-source contribution be welcome?
 
