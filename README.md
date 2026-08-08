@@ -1,67 +1,41 @@
-# Devaanga Prakash
+# Hi, I'm Devaanga.
 
-### PRODUCT × SOFTWARE × AI
+I build software, explore AI systems, and work with data.
 
-I turn promising ideas into working products.
-
-I combine product thinking with hands-on software building—from finding the real problem to designing, shipping, and improving the solution.
-
-[Portfolio](https://legendairy93.github.io) · [LinkedIn](https://www.linkedin.com/in/devaanga-prakash-0a8482196) · [Email](mailto:devaanga1234@gmail.com)
+[**Portfolio**](https://legendairy93.github.io) | [**LinkedIn**](https://www.linkedin.com/in/devaanga-prakash-0a8482196) | [**Email**](mailto:devaanga1234@gmail.com)
 
 ---
 
-## Building now
+## Things I've made
 
-### [PromptDiff](https://github.com/LegenDairy93/promptdiff)
+Most of my projects begin with a question.
 
-**Behavioral version control and release governance for prompts and agents.**
+### What changed?
 
-Compare outputs, tool calls, and execution traces. Approve behavioral baselines and enforce release policy.
+[**PromptDiff**](https://github.com/LegenDairy93/promptdiff) compares two versions of a prompt or agent. It looks at the answer, tool calls, arguments, and the path taken through a run.
 
-PromptDiff is a local-first TypeScript CLI that captures how an AI system behaved, compares it with an approved baseline, and gives teams a reviewable artifact for deciding what ships.
+`TypeScript` | `CLI` | `HTML reports`
 
-- Treats prompts and agents as different system types
-- Captures outputs, ordered traces, tool calls, argument contracts, and violations
-- Promotes accepted runs into named, integrity-checked behavioral baselines
-- Records promotion history, reviewer intent, Git state, and CI provenance
-- Produces self-contained HTML reports and configurable regression gates
-- Keeps tool drift informational by default; explicit policy decides what blocks CI
-- Protected by **72 tests** in the current v0.3 release
+### What happens when the tool says nothing?
 
-[Read the repository](https://github.com/LegenDairy93/promptdiff) · [See v0.3](https://github.com/LegenDairy93/promptdiff/blob/main/docs/release-0.3.0.md) · [Open an issue](https://github.com/LegenDairy93/promptdiff/issues)
+[**HAVOC**](https://github.com/LegenDairy93/havoc) is an experiment that drops a tool response after an action has already happened, then watches what the agent does next.
 
-`TypeScript` `Node.js` `JSON Schema` `Vitest` `GitHub Actions` `agent evaluation`
+`JavaScript` | `fault injection` | `agent experiments`
 
-### Why it exists
+### Where might an open-source contribution be welcome?
 
-Evaluation platforms answer questions such as “which prompt or model scores better?” PromptDiff owns the change-control loop around a release:
+[**Contrib Signals**](https://github.com/LegenDairy93/contrib-signals) collects public GitHub evidence into SQLite and leaves the ranking logic visible in SQL.
 
-```text
-capture behavior → compare candidate → review the path → approve a baseline → gate what ships next
-```
-
-The final answer is only one part of agent behavior. If two runs return identical text but use different tools, data, or execution paths, that difference should be visible—even when policy chooses not to block it.
+`Python` | `SQLite` | `GitHub API`
 
 ---
 
-## What I am building toward
+## Smaller and earlier things
 
-- Policy-as-code for behavioral release decisions
-- Deterministic replay and incident-to-regression workflows
-- GitHub pull-request annotations and approval checks
-- Adapters for common agent runtimes and OpenTelemetry traces
-- A collaboration layer without sacrificing portable, local-first artifacts
+- [**Discharge Navigator**](https://huggingface.co/spaces/LegenDairy93/discharge-navigator) - an earlier experiment in turning hospital discharge instructions into a clearer checklist.
+- **GitGame** - a weekend side project that started because Git commits looked like they should be playable.
+- [**Everything else**](https://github.com/LegenDairy93?tab=repositories) - old notebooks, forks, unfinished ideas, and the rest of the trail.
 
-## Background
+---
 
-I studied Business Administration and learned software by building products. That path taught me to move between user problems, product decisions, and implementation—and to stay with an idea until it becomes a complete, usable product.
-
-I am based in India and open to product, software, AI, developer tooling, and automation opportunities—including remote collaborations.
-
-## Build with me
-
-- Try PromptDiff and open an issue with a reproducible failure case.
-- Contribute an adapter, assertion, example, policy, or documentation improvement.
-- Reach out if you are building ambitious products or AI systems where reliability and auditability matter.
-
-**Contact:** [devaanga1234@gmail.com](mailto:devaanga1234@gmail.com)
+I am based in Guwahati, India. If something here is interesting, [say hello](mailto:devaanga1234@gmail.com).
