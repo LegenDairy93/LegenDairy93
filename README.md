@@ -16,12 +16,6 @@ Most of my projects begin with a question.
 
 `TypeScript` | `CLI` | `HTML reports`
 
-### What happens when the tool says nothing?
-
-[**HAVOC**](https://github.com/LegenDairy93/havoc) is an experiment that drops a tool response after an action has already happened, then watches what the agent does next.
-
-`JavaScript` | `fault injection` | `agent experiments`
-
 ### Where might an open-source contribution be welcome?
 
 [**Contrib Signals**](https://github.com/LegenDairy93/contrib-signals) collects public GitHub evidence into SQLite and leaves the ranking logic visible in SQL.
