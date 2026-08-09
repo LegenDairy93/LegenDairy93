@@ -8,11 +8,11 @@ I build open software and investigate how AI systems behave outside clean demos.
 
 ### Shipping now
 
-**[Contrib Signals](https://legendairy93.github.io/contrib-signals/)** turns a contributor profile into a bounded list of current GitHub issues. It separates fit, readiness, and missing evidence instead of hiding them inside one score.
+**[Forkyssey](https://legendairy93.github.io/forkyssey/)** turns a contributor profile into a bounded list of current GitHub issues. It separates fit, readiness, and missing evidence instead of hiding them inside one score.
 
 `Python` `TypeScript` `GitHub API` `Evaluation`
 
-[Use it](https://legendairy93.github.io/contrib-signals/) · [Read the source](https://github.com/LegenDairy93/contrib-signals)
+[Use it](https://legendairy93.github.io/forkyssey/) · [Read the source](https://github.com/LegenDairy93/forkyssey)
 
 ---
 
